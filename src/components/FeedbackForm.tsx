@@ -8,6 +8,10 @@ export default function FeedbackForm() {
     <form className="form">
       <textarea
         onChange={(event) => {
+          const newText = event.target.value;
+          if (newText.length > MAX_CHARACTERS) {
+            return;
+          }
           setText(event.target.value);
         }}
         value={text}
