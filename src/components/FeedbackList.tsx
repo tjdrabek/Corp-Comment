@@ -3,14 +3,14 @@ import FeedbackItem from "./FeedbackItem";
 const feedbackItems = [
   {
     upvoteCount: 593,
-    badgetLetter: "B",
+    badgeLetter: "B",
     companyName: "ByteGrad",
     feedbackText: "test test test",
     daysAgo: 4,
   },
   {
     upvoteCount: 563,
-    badgetLetter: "S",
+    badgeLetter: "S",
     companyName: "Starbucks",
     feedbackText: "bla bla bla",
     daysAgo: 3,
