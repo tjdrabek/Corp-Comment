@@ -69,7 +69,6 @@ function App() {
         isLoading={isLoading}
         errorMessage={errorMessage}
       />
-      ;
       <HashtagList />
     </div>
   );
