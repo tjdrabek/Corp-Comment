@@ -3,6 +3,7 @@ import Container from "./layout/Container";
 import Footer from "./layout/Footer";
 import HashtagList from "./hashtag/HashtagList";
 import { useEffect, useState, useMemo } from "react";
+import HashtagItem from "./hashtag/HashtagItem";
 
 function App() {
   const [feedbackItems, setFeedbackItems] = useState<TFeedbackItem[]>([]);
@@ -94,10 +95,15 @@ function App() {
         isLoading={isLoading}
         errorMessage={errorMessage}
       />
-      <HashtagList
-        companyList={companyList}
-        handleSelectCompany={handleSelectCompany}
-      />
+      <HashtagList>
+        {companyList.map((company) => (
+          <HashtagItem
+            company={company}
+            onSelectCompany={handleSelectCompany}
+            key={company}
+          />
+        ))}
+      </HashtagList>
     </div>
   );
 }
