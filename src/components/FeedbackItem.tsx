@@ -8,11 +8,11 @@ export default function FeedbackItem({ feedbackItem }) {
         <span>{feedbackItem.upvoteCount}</span>
       </button>
       <div>
-        <p>{feedbackItem.badgetLetter}</p>
+        <p>{feedbackItem.badgeLetter}</p>
       </div>
       <div>
         <p>{feedbackItem.companyName}</p>
-        <p>{feedbackItem.feedbackText}</p>
+        <p>{feedbackItem.text}</p>
       </div>
       <p>{feedbackItem.daysAgo}d</p>
     </li>

@@ -5,14 +5,14 @@ const feedbackItems = [
     upvoteCount: 593,
     badgeLetter: "B",
     companyName: "ByteGrad",
-    feedbackText: "test test test",
+    text: "test test test",
     daysAgo: 4,
   },
   {
     upvoteCount: 563,
     badgeLetter: "S",
     companyName: "Starbucks",
-    feedbackText: "bla bla bla",
+    text: "bla bla bla",
     daysAgo: 3,
   },
 ];
